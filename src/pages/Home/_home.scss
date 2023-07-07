@@ -1,0 +1,25 @@
+.gallery {
+  margin: 50px 0;
+  background-color: $secondary;
+  padding: 50px;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  @media (max-width: 1150px) {
+    padding: 0;
+  }
+  & > * {
+    flex: 1 1 31%;
+    @media (max-width: 1150px) {
+      flex: 45%;
+    }
+    @media (max-width: 668px) {
+      flex: 100%;
+    }
+  }
+  @media (max-width: 1150px) {
+    background-color: #fff;
+  }
+}

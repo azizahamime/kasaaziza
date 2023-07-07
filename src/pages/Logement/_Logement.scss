@@ -1,0 +1,91 @@
+.information {
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @media (max-width: 1250px) {
+      flex-direction: column;
+    }
+    .house {
+      color: $primary;
+      font-weight: 500;
+      &-title {
+        font-size: 36px;
+        line-height: 51px;
+        margin-bottom: 10px;
+        @media (max-width: 668px) {
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+      &-location {
+        font-size: 18px;
+        line-height: 26px;
+        @media (max-width: 668px) {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+    .host {
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 1250px) {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .star {
+        @media (max-width: 1250px) {
+          order: 1;
+        }
+      }
+      &-infos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 20px;
+        @media (max-width: 1250px) {
+          order: 2;
+        }
+
+        &__name {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 26px;
+          color: $primary;
+          width: 65px;
+          @media (max-width: 668px) {
+            font-size: 12px;
+            line-height: 17px;
+          }
+        }
+        &__photo {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          @media (max-width: 668px) {
+            height: 32px;
+            width: 32px;
+          }
+        }
+      }
+    }
+  }
+  .content {
+    padding: 50px 0;
+    @media (max-width: 668px) {
+      padding: 20px 0;
+    }
+    .container {
+      display: flex;
+      gap: 20px 60px;
+      .dropdown {
+        width: 50%;
+        @media (max-width: 1250px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

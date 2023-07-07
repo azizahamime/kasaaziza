@@ -1,0 +1,36 @@
+header {
+  padding: 40px 0;
+  @media (max-width: 668px) {
+    padding: 20px 0;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      @media (max-width: 668px) {
+        width: 140px;
+      }
+    }
+
+    a {
+      color: $primary;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 34px;
+      padding: 10px 20px;
+      text-decoration: none;
+      padding-bottom: 5px;
+      font-family: 'Montserrat';
+      @media (max-width: 668px) {
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      &.active,
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

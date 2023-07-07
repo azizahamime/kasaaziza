@@ -1,0 +1,10 @@
+.about {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  @media (max-width: 668px) {
+    gap: 20px;
+  }
+}

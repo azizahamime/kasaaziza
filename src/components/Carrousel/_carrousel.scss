@@ -1,0 +1,52 @@
+.slider {
+  height: 350px;
+  margin-bottom: 50px;
+  position: relative;
+  @media (max-width: 668px) {
+    height: 255px;
+  }
+  .img-principale {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  .nextIcon {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    top: 40%;
+    right: 10px;
+    cursor: pointer;
+    @media (max-width: 668px) {
+      top: 50%;
+      height: 19px;
+      width: 11px;
+    }
+  }
+  .prevIcon {
+    position: absolute;
+    top: 40%;
+    width: 46px;
+    height: 46px;
+    left: 10px;
+    cursor: pointer;
+    @media (max-width: 668px) {
+      top: 50%;
+      height: 19px;
+      width: 11px;
+    }
+  }
+  .position {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffffff;
+    @media (max-width: 668px) {
+      font-size: 12px;
+    }
+  }
+}
